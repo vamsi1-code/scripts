@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = prompt("enter login type");
+        user = user.toLowerCase();
+        if(user=="admin"){
+            alert("logged in as admin");
+        }
+        else if(user=="employee"){
+            alert("logged in as employee");
+        }
+        else if(user=="super_admin")
+        {
+            alert("logged as a super admin");
+        }
+        else if(user=="customer"){
+
+            alert("logged in as a customer");
+        }
+        else{
+            alert("unauthorized user");
+        }
+    </script>
+</body>
+</html>

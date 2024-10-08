@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let distance = prompt("enter you distance");
+			if (distance > 0 && distance <= 5) {
+				alert("You have to pay 5 rupees");
+			} else if (distance > 5 && distance <= 10) {
+				alert("You have to pay 10 rupees");
+			} else if (distance > 10 && distance <= 20) {
+				alert("You have to pay 20 rupees");
+			} else if (distance > 20) {
+				let Echarge = (distance - 20) * 5;
+				let Tcharge = 30 + Echarge;
+				alert(`you are charged extra ${Echarge} and you have to pay ${Tcharge}`);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cscore = prompt("enter Credit Score");
+        cscore = Number(cscore);
+        let aincome = prompt("enter Annual Income");
+        aincome = Number(aincome);
+        let LoanAmount = prompt("enter Loan Amount");
+        LoanAmount = Number(LoanAmount);
+
+        if(cscore>=600 && aincome >=40000 && LoanAmount <= aincome/2){
+             
+            alert("YOU ARE ELIGIBLE TO TAKE LOAN");
+        }
+        else{
+            alert("YOU ARE NOT ELIGIBLE TO TAKE LOAN");
+        }
+    </script>
+</body>
+</html>

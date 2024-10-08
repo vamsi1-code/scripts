@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    #content{
+        display: grid;
+        grid-template-columns: 18rem 18rem 18rem 18rem;
+        gap: 20px;
+
+    }
+</style>
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Mobile Application</a>
+        <form class="form-inline">
+            <input id="searchbar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onkeyup="filter()">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+      <section class="main">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav d-flex flex-direction justify-content">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+              </div>
+            </div>
+          </nav>    
+      </section>
+      <section id="content">
+      <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px ;display: inline-block;">
+        <img src="./iphone-15-pro.webp" class="card-img-top" alt="..." style="height: 20vw;">
+        <div class="card-body">
+          <h5 class="card-title">iphone-15-pro</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px;display: inline-block;">
+        <img src="./iphone-14.jpg" class="card-img-top" alt="..." style="height: 20vw;padding: 20px;width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">iphone-14</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px ;display: inline-block;">
+        <img src="./SamsungGalaxyS23Ultra.webp" class="card-img-top" alt="..." style="height: 20vw;">
+        <div class="card-body">
+          <h5 class="card-title">SamsungGalaxyS23Ultra</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px ;display: inline-block;">
+        <img src="./nord-ce-2-hero.avif" class="card-img-top" alt="..." style="height: 20vw;">
+        <div class="card-body">
+          <h5 class="card-title">nord-ce-2-hero</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px ;display: inline-block;">
+        <img src="./nord-ce-2-hero.avif" class="card-img-top" alt="..." style="height: 20vw;">
+        <div class="card-body">
+          <h5 class="card-title">nord-ce-2-heroine</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px ;display: inline-block;">
+        <img src="./SamsungGalaxyS23Ultra.webp" class="card-img-top" alt="..." style="height: 20vw;">
+        <div class="card-body">
+          <h5 class="card-title">SamsungGalaxym13</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px;display: inline-block;">
+        <img src="./iphone-14.jpg" class="card-img-top" alt="..." style="height: 20vw;padding: 20px;width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title">iphone-14</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 70px;height:35vw;margin-left:30px ;display: inline-block;">
+            <img src="./iphone-15-pro.webp" class="card-img-top" alt="..." style="height: 20vw;">
+            <div class="card-body">
+              <h5 class="card-title">iphone-13-pro</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </section>
+      <script>
+             function filter() {
+            let input = document.getElementById('searchbar').value.toLowerCase();
+            let cards = document.querySelectorAll('#content .card');
+            
+            console.log("Search Input:", input); // Debugging output
+
+            cards.forEach(card => {
+                let title = card.getAttribute('data-title').toLowerCase();
+                console.log("Card Title:", title); // Debugging output
+                
+                if (title.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = prompt("enter your first angle?");
+        let y = prompt("enter second angle");
+        let z = prompt("enter third angle");
+        
+        x = Number(x);
+        y = Number(y);
+        z = Number(z);
+        if(x+y+z==180 && x >0 && y>0 && z > 0){
+            if(x==90||y==90||z==90 ){
+                alert("yes it is a right angle triangle");
+            }
+            else{
+                alert("it is not a right angle traingle");
+            }
+        }
+        else{
+            alert("it is not a traingle");
+        }
+
+    </script>
+</body>
+</html>
